@@ -52,8 +52,8 @@ export default function Navbar() {
 
         {/* Links for Larger Screens */}
         <div className={`hidden md:flex md:flex-row gap-4`}>
-          <Link href="#">Liste des pays</Link>
-          <Link href="#">Ajouter un pays</Link>
+          <Link href="/">Liste des pays</Link>
+          <Link href="/newCountry">Ajouter un pays</Link>
           {/* <Link href="#">TestOPSSur Staging</Link> */}
         </div>
       </div>
