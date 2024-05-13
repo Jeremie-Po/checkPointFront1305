@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-import { Separator } from "@/components/ui/separator";
 
 const icons = [
   {
@@ -33,13 +32,14 @@ export default function Footer() {
           {/* Logo Link */}
           <div>
             <Link href="/">
-              <h1 className="font-rubik text-lg text-bgPrimary">Easy Gift</h1>
+              <h1 className="font-rubik text-lg text-bgPrimary">
+                Check point frontend{" "}
+              </h1>
             </Link>
           </div>
         </div>
-        <Separator className="w-1/2 self-center my-4" />
         {/* Circle elements */}
-        <div className="flex justify-center items-center space-x-2">
+        {/* <div className="flex justify-center items-center space-x-2">
           {icons.map((icon) => (
             <div
               key={icon.id}
@@ -55,10 +55,10 @@ export default function Footer() {
               </svg>
             </div>
           ))}
-        </div>
-        <p className="text-center text-xs text-white py-2 mt-4">
+        </div> */}
+        {/* <p className="text-center text-xs text-white py-2 mt-4">
           Copyright © 2024 Easy Gift, Inc. All rights reserved.
-        </p>
+        </p> */}
       </div>
     </footer>
   );
