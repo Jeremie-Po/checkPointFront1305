@@ -15,17 +15,19 @@ export default function CountryDetails() {
     },
   });
   const country = data?.country;
-console.log(country)
+  console.log(country);
   return (
-    
+    <div>
       {typeof country === "undefined" ? (
-            "Chargement..."
-          ) : (
-      <div> {country.name}</div>
-      <div> {country.code}</div>
-      <div> {country.emoji}</div>
-      <div> {country.contient.name}</div>
-          )}
-    
+        "Chargement..."
+      ) : (
+        <>
+          <div> {country.name}</div>
+          <div> {country.code}</div>
+          <div> {country.emoji}</div>
+          <div> {country.continent?.name}</div>
+        </>
+      )}
+    </div>
   );
 }
