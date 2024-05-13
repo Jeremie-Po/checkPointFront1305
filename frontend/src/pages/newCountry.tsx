@@ -93,7 +93,7 @@ export default function NewAd() {
           </div>
         </div>
 
-        <button className="btn btn-primary text-white mt-12 w-full">
+        <button className="btn btn-primary text-black mt-12 w-full">
           Envoyer
         </button>
       </form>
