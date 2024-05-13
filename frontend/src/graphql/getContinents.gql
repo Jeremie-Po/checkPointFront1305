@@ -1,0 +1,6 @@
+query Query {
+  continents {
+    id
+    name
+  }
+}
