@@ -3,11 +3,14 @@ import type { AppProps } from "next/app";
 import dynamic from "next/dynamic";
 import { ApolloProvider } from "@apollo/client";
 import client from "@/graphql/client";
+import Layout from "./layout";
 
 function App({ Component, pageProps }: AppProps) {
   return (
     <ApolloProvider client={client}>
-      <Component {...pageProps} />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </ApolloProvider>
   );
 }
